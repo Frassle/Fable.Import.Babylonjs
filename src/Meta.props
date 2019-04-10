@@ -1,0 +1,9 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Description>Fable bindings for Babylon.js</Description>
+    <PackageProjectUrl>https://github.com/Frassle/Fable.Import.Babylonjs</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Frassle/Fable.Import.Babylonjs.git</RepositoryUrl>
+    <PackageTags>babylonjs;fsharp;fable</PackageTags>
+    <Authors>Fraser Waters</Authors>
+  </PropertyGroup>
+</Project>

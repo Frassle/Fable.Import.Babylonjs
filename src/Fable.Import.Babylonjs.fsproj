@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="Meta.props" />
+  <PropertyGroup>
+    <PackageId>Fable.Import.Babylonjs</PackageId>
+    <Version>1.0.0-alpha-001</Version>
+    <PackageVersion>1.0.0-alpha-001</PackageVersion>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Babylonjs.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Fable.Core" Version="2.0.3" />
+    <PackageReference Include="Fable.Import.Browser" Version="1.3.0" />
+  </ItemGroup>
+</Project>
