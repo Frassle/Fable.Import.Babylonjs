@@ -28593,34 +28593,6 @@ type [<AllowNullLiteral>] WebGLRenderingContext =
     abstract clearBufferuiv: buffer: float * drawbuffer: float * values: ArrayBufferView * srcOffset: float option -> unit
     abstract clearBufferfi: buffer: float * drawbuffer: float * depth: float * stencil: float -> unit
 
-type [<AllowNullLiteral>] Document =
-    abstract mozCancelFullScreen: unit -> unit
-    abstract msCancelFullScreen: unit -> unit
-    abstract webkitCancelFullScreen: unit -> unit
-    abstract requestPointerLock: unit -> unit
-    abstract exitPointerLock: unit -> unit
-    abstract fullscreen: bool with get, set
-    abstract mozFullScreen: bool with get, set
-    abstract msIsFullScreen: bool with get, set
-    abstract webkitIsFullScreen: bool
-    abstract pointerLockElement: Element
-    abstract mozPointerLockElement: HTMLElement with get, set
-    abstract msPointerLockElement: HTMLElement with get, set
-    abstract webkitPointerLockElement: HTMLElement with get, set
-
-type [<AllowNullLiteral>] HTMLCanvasElement =
-    abstract requestPointerLock: unit -> unit
-    abstract msRequestPointerLock: unit -> unit
-    abstract mozRequestPointerLock: unit -> unit
-    abstract webkitRequestPointerLock: unit -> unit
-    /// Track wether a record is in progress 
-    abstract isRecording: bool with get, set
-    /// Capture Stream method defined by some browsers 
-    abstract captureStream: ?fps: float -> MediaStream
-
-type [<AllowNullLiteral>] CanvasRenderingContext2D =
-    abstract msImageSmoothingEnabled: bool with get, set
-
 type [<AllowNullLiteral>] WebGLBuffer =
     abstract references: float with get, set
     abstract capacity: float with get, set
@@ -28629,28 +28601,6 @@ type [<AllowNullLiteral>] WebGLBuffer =
 type [<AllowNullLiteral>] WebGLProgram =
     abstract transformFeedback: WebGLTransformFeedback option with get, set
     abstract __SPECTOR_rebuildProgram: (string -> string -> (WebGLProgram -> unit) -> (string -> unit) -> unit) option with get, set
-
-type [<AllowNullLiteral>] MouseEvent =
-    abstract mozMovementX: float with get, set
-    abstract mozMovementY: float with get, set
-    abstract webkitMovementX: float with get, set
-    abstract webkitMovementY: float with get, set
-    abstract msMovementX: float with get, set
-    abstract msMovementY: float with get, set
-
-type [<AllowNullLiteral>] HTMLVideoElement =
-    abstract mozSrcObject: obj option with get, set
-
-type [<AllowNullLiteral>] Element =
-    abstract webkitRequestFullScreen: (unit -> unit) with get, set
-
-type [<AllowNullLiteral>] Screen =
-    abstract orientation: string
-    abstract mozOrientation: string
-
-type [<AllowNullLiteral>] Math =
-    abstract fround: x: float -> float
-    abstract imul: a: float * b: float -> float
 
 type [<AllowNullLiteral>] EXT_disjoint_timer_query =
     abstract QUERY_COUNTER_BITS_EXT: float with get, set

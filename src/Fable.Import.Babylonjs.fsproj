@@ -2,8 +2,8 @@
   <Import Project="Meta.props" />
   <PropertyGroup>
     <PackageId>Fable.Import.Babylonjs</PackageId>
-    <Version>1.0.0-alpha-001</Version>
-    <PackageVersion>1.0.0-alpha-001</PackageVersion>
+    <Version>2.0.0</Version>
+    <PackageVersion>2.0.0</PackageVersion>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
